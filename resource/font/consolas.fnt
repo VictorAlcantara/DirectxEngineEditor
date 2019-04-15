@@ -1,0 +1,97 @@
+bitmap "consolas"
+
+charSize 64
+
+char 'A' coord_min 2 9 coord_max 37 50 offset 0
+char 'B' coord_min 41 9 coord_max 69 50 offset 0
+char 'C' coord_min 74 8 coord_max 104 51 offset 1
+char 'D' coord_min 110 9 coord_max 140 50 offset 0
+char 'E' coord_min 148 9 coord_max 172 50 offset 0
+char 'F' coord_min 183 9 coord_max 207 50 offset 0
+char 'G' coord_min 214 8 coord_max 244 51 offset 1
+char 'H' coord_min 250 9 coord_max 279 50 offset 0
+char 'I' coord_min 287 9 coord_max 312 50 offset 0
+char 'J' coord_min 322 9 coord_max 345 51 offset 1
+char 'K' coord_min 356 9 coord_max 385 50 offset 0
+char 'L' coord_min 394 9 coord_max 418 50 offset 0
+char 'M' coord_min 423 9 coord_max 456 50 offset 0
+char 'N' coord_min 460 9 coord_max 489 50 offset 0
+char 'O' coord_min 3 73 coord_max 36 116 offset 1
+char 'P' coord_min 41 74 coord_max 69 115 offset 0
+char 'Q' coord_min 73 73 coord_max 108 126 offset 11
+char 'R' coord_min 112 74 coord_max 140 115 offset 0
+char 'S' coord_min 145 73 coord_max 174 116 offset 1
+char 'T' coord_min 179 74 coord_max 210 115 offset 0
+char 'U' coord_min 215 74 coord_max 244 116 offset 1
+char 'V' coord_min 247 74 coord_max 282 115 offset 0
+char 'W' coord_min 283 74 coord_max 316 115 offset 0
+char 'X' coord_min 317 74 coord_max 352 115 offset 0
+char 'Y' coord_min 352 74 coord_max 388 115 offset 0
+char 'Z' coord_min 390 74 coord_max 419 115 offset 0
+
+char 'a' coord_min 426 83 coord_max 453 116 offset 1
+char 'b' coord_min 462 71 coord_max 489 116 offset 1
+char 'c' coord_min 6 148 coord_max 32 181 offset 1
+char 'd' coord_min 40 136 coord_max 68 181 offset 1
+char 'e' coord_min 75 148 coord_max 104 181 offset 1
+char 'f' coord_min 109 135 coord_max 140 180 offset 0
+char 'g' coord_min 144 148 coord_max 175 194 offset 14
+char 'h' coord_min 182 136 coord_max 208 180 offset 0
+char 'i' coord_min 217 135 coord_max 243 180 offset 0
+char 'j' coord_min 251 135 coord_max 275 194 offset 14
+char 'k' coord_min 287 136 coord_max 316 180 offset 0
+char 'l' coord_min 322 136 coord_max 348 180 offset 0
+char 'm' coord_min 354 148 coord_max 385 180 offset 0
+char 'n' coord_min 392 148 coord_max 418 180 offset 0
+char 'o' coord_min 424 148 coord_max 455 181 offset 1
+char 'p' coord_min 462 148 coord_max 489 193 offset 13
+char 'q' coord_min 5 213 coord_max 33 258 offset 13
+char 'r' coord_min 43 213 coord_max 70 245 offset 0
+char 's' coord_min 77 213 coord_max 102 246 offset 1
+char 't' coord_min 108 204 coord_max 138 246 offset 1
+char 'u' coord_min 147 214 coord_max 173 246 offset 1
+char 'v' coord_min 179 214 coord_max 210 245 offset 0
+char 'w' coord_min 213 214 coord_max 247 245 offset 0
+char 'x' coord_min 249 214 coord_max 281 245 offset 0
+char 'y' coord_min 283 214 coord_max 315 259 offset 14
+char 'z' coord_min 322 214 coord_max 348 245 offset 0
+
+char '0' coord_min 354 203 coord_max 385 246 offset 1
+char '1' coord_min 391 204 coord_max 419 245 offset 0
+char '2' coord_min 426 203 coord_max 454 245 offset 0
+char '3' coord_min 462 203 coord_max 488 246 offset 1
+char '4' coord_min 3 269 coord_max 36 310 offset 0
+char '5' coord_min 42 269 coord_max 68 311 offset 1
+char '6' coord_min 75 269 coord_max 104 311 offset 1
+char '7' coord_min 110 269 coord_max 139 310 offset 0
+char '8' coord_min 145 268 coord_max 174 311 offset 1
+char '9' coord_min 180 268 coord_max 209 310 offset 0
+
+char '\"' coord_min 401 266 coord_max 409 310 offset 0
+char '\'' coord_min 401 266 coord_max 409 310 offset 0
+char ',' coord_min 219 300 coord_max 235 321 offset 11
+char '.' coord_min 259 300 coord_max 270 311 offset 1
+char ';' coord_min 289 278 coord_max 305 321 offset 11
+char ':' coord_min 329 278 coord_max 340 311 offset 1
+char '_' coord_min 352 310 coord_max 388 323 offset 13
+char '!' coord_min 435 266 coord_max 444 311 offset 1
+char '?' coord_min 466 266 coord_max 486 311 offset 1
+char '+' coord_min 4 342 coord_max 35 375 offset 0
+char '-' coord_min 45 356 coord_max 64 375 offset 0
+char '=' coord_min 76 350 coord_max 104 375 offset 0
+char '%' coord_min 107 330 coord_max 142 376 offset 1
+char '&' coord_min 143 331 coord_max 178 376 offset 1
+char '#' coord_min 178 334 coord_max 211 375 offset 0
+char '(' coord_min 211 328 coord_max 239 389 offset 14
+char ')' coord_min 255 328 coord_max 273 389 offset 14
+char '[' coord_min 292 330 coord_max 309 388 offset 13
+char ']' coord_min 326 330 coord_max 342 388 offset 13
+char '{' coord_min 357 330 coord_max 381 388 offset 13
+char '}' coord_min 394 330 coord_max 418 388 offset 13
+char '|' coord_min 437 324 coord_max 443 388 offset 13
+char ' ' coord_min 352 309 coord_max 370 315 offset 0
+char '*' coord_min 77 396 coord_max 102 440 offset 0
+char '/' coord_min 460 331 coord_max 488 382 offset 7
+char '@' coord_min 37 395 coord_max 72 454 offset 14
+char '<' coord_min 111 406 coord_max 135 440 offset 1
+char '>' coord_min 148 406 coord_max 172 440 offset 1

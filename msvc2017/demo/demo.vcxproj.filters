@@ -1,0 +1,1529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{656a717b-125c-488d-947c-bd137a52b0a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{9c128fe7-ecee-4370-af6a-0ccd85adca17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\game">
+      <UniqueIdentifier>{bcd6374a-a053-4cd1-adeb-917bcb3e1497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\shared">
+      <UniqueIdentifier>{9bef7f71-9d17-492b-851e-98fb0b8dc00e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\shader">
+      <UniqueIdentifier>{009c9c34-89f5-4863-8b55-86a3a3ff590c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\model">
+      <UniqueIdentifier>{41a381c2-ec2d-49b4-8f32-2772bb1be3bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\texture">
+      <UniqueIdentifier>{5a928556-75d7-47c9-adb5-9c1b705351a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\map">
+      <UniqueIdentifier>{f037f20a-c5a6-4920-8c4d-aee147ef4a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\font">
+      <UniqueIdentifier>{2d4d9bfa-371d-4372-a29a-a5a64404c215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\editor">
+      <UniqueIdentifier>{4d51e69e-4ba2-4a7a-b79c-253f24efc272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\_engine">
+      <UniqueIdentifier>{5e9815f7-ed55-4b67-b164-4249c4aa82ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\editor\BlockToolPosition.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\BlockToolSize.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorCommand.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_AmbientLight.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_Block.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_Camera.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_CameraTrack.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_CameraTrackPoint.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_Door.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_Model.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_Monster.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_Partition.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_PlayerSpawn.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_PointLight.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_Refraction.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_SpotLight.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_Talk.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_TriggerCamera.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntity_TriggerCommand.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEntityFinder.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorEvent.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorGlobal.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorGui.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorState.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorState_BlockToolUse.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorState_EntityCreate.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorState_Idle.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorState_PickAxis.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorState_PickEntity.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorTool.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorToolManager.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\EditorWorld.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\Grid.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\GridLockAction.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\GuiAnimation.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\GuiComponent.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\GuiComponentFunction.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\GuiConfig.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\GuiPage.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\GuiPageControl.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\editor\RenderInfoEditor.cpp">
+      <Filter>source\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Angle.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Application.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ApplicationCoreInterface.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\AppMessageBox.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\BlendState.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Chronometer.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Class.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\CollisionInfo.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\CollisionManager.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Component.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Component_Collision.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Component_Physics.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Component_Render.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Component_Trigger.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ConstantBuffer.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Core.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Debug.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\DebugRender.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\DepthStencil.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\DepthStencilState.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\dx11_BlendState.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\dx11_DepthStencil.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\dx11_depthStencilState.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\dx11_Model.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\dx11_ShaderUtil.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\dx11_Texture.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Effect.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\EngineGlobal.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Entity.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\EntityFinder.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\EntityManager.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\EventDispatcher.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\EventEngine.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\EventListener.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Exception.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\File.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\FileUtil.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Font.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\FontEffect.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\FontManager.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Gradient.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Input.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\KeyMap.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Light.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\LightManager.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Math.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Matrix.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Model.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ModelManager.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ModelRepository.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ObjLoader.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Partition.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Path.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Physics.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Primitive.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Process.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ProcessEngine.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ProcessManager.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Random.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Rasterizer.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Renderer.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\RenderInfo.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\RenderTarget.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ResourceManager.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\SamplerState.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Scene.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ScriptLine.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\ScriptReader.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Shader.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\String.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\StringClass.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\TableHashFunction.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Texture.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\TextureManager.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\TgaLoader.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Timer.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Vector.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\Vertex.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\win32_File.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\engine\win32_Platform.cpp">
+      <Filter>source\_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\AiState.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\AiStateMachine.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\AiView.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\CameraManager.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\CharacterControl.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Console.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_AmbientLight.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Block.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_CameraTrack.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Door.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_GameCamera.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Model.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Monster.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_MonsterProjectile.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Player.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_PointLight.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Refraction.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Rocket.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_SpotLight.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Talk.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_Test.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_TriggerCamera.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\Entity_TriggerCommand.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\GameCollision.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\GameCommand.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\GameEntityFinder.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\GameGlobal.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\GameGui.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\GameWorld.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\game\RenderInfo_Entity.cpp">
+      <Filter>source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\Command.cpp">
+      <Filter>source\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\Component_LightFlicker.cpp">
+      <Filter>source\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\EntityUtil.cpp">
+      <Filter>source\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\FirstPersonCamera.cpp">
+      <Filter>source\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\Loader.cpp">
+      <Filter>source\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\ProcessShared.cpp">
+      <Filter>source\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\VecGrid.cpp">
+      <Filter>source\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\editor\BlockToolPosition.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\BlockToolSize.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorCommand.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_AmbientLight.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_Block.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_Camera.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_CameraTrack.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_CameraTrackPoint.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_Door.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_Model.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_Monster.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_Partition.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_PlayerSpawn.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_PointLight.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_Refraction.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_SpotLight.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_Talk.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_TriggerCamera.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntity_TriggerCommand.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntityFinder.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEntityUtil.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorEvent.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorGlobal.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorGui.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorState.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorState_BlockToolUse.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorState_EntityCreate.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorState_Idle.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorState_PickAxis.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorState_PickEntity.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorTool.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorToolManager.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\EditorWorld.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\Grid.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GridLockAction.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GridUtil.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GuiAnimation.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GuiComponent.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GuiComponentFunction.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GuiConfig.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GuiPage.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GuiPageControl.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\GuiUtil.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\editor\RenderInfoEditor.h">
+      <Filter>source\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Angle.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\api_BlendState.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\api_DepthStencil.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\api_DepthStencilState.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\api_File.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\api_Model.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\api_ShaderUtil.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\api_Texture.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Application.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ApplicationCoreInterface.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\AppMessageBox.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Array.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\BlendState.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Chronometer.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Class.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\CollisionInfo.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\CollisionManager.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Component.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Component_Collision.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Component_Physics.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Component_Render.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Component_Trigger.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ConstantBuffer.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Core.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\CoreInterface.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\CoreModule.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Debug.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\DebugRender.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\DepthStencil.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\DepthStencilState.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Effect.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\EngineGlobal.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Entity.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\EntityFinder.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\EntityManager.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Event.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\EventDispatcher.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\EventEngine.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\EventListener.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Exception.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\File.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\FileUtil.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Font.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\FontEffect.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\FontManager.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Gradient.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Handle.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\HandleRepository.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Input.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\KeyMap.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Light.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\LightManager.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\List.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ListBridge.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ListIterator.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Math.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Matrix.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Model.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ModelManager.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ModelRepository.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\NodeList.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ObjLoader.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Partition.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Path.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Physics.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\PhysicsInfo.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Platform.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Pointer.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Primitive.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Process.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ProcessEngine.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ProcessManager.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Random.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Rasterizer.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Renderer.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\RenderInfo.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\RenderTarget.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\RenderUtil.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ResourceManager.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ResourceModule.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\SamplerState.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Scene.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ScriptLine.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\ScriptReader.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Shader.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\String.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\StringClass.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Table.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\TableHashFunction.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\TableIterator.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Texture.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\TextureManager.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\TgaLoader.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Timer.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Type.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Vector.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\Vertex.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\engine\WorldInterface.h">
+      <Filter>source\_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\AiState.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\AiStateMachine.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\AiView.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\CameraManager.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\CharacterControl.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Console.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_AmbientLight.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Block.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_CameraTrack.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Door.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_GameCamera.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Model.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Monster.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_MonsterProjectile.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Player.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_PointLight.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Refraction.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Rocket.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_SpotLight.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Talk.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_Test.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_TriggerCamera.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\Entity_TriggerCommand.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameCollision.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameCommand.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameEntityFinder.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameEnum.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameEvent.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameGlobal.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameGui.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameTrigger.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\GameWorld.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\game\RenderInfo_Entity.h">
+      <Filter>source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\Command.h">
+      <Filter>source\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\Component_LightFlicker.h">
+      <Filter>source\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\EntityUtil.h">
+      <Filter>source\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\FirstPersonCamera.h">
+      <Filter>source\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\Loader.h">
+      <Filter>source\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\ProcessShared.h">
+      <Filter>source\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\VecGrid.h">
+      <Filter>source\shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resource\model\bath.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\computer.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\key.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\panel.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\player.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\server.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\table.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\texturedCube.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\thing.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\thing2.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\thing3.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\tv.blend">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\map\test.map">
+      <Filter>resource\map</Filter>
+    </None>
+    <None Include="..\..\resource\font\consolas.fnt">
+      <Filter>resource\font</Filter>
+    </None>
+    <None Include="..\..\resource\font\consolas.xcf">
+      <Filter>resource\font</Filter>
+    </None>
+    <None Include="..\..\resource\texture\computer.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\door.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\Floor1.blend">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor1.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor3.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floors.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass1.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glassVarious.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\key.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\metal.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\panel.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\player.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\server.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\table.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\thing2.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\thing3.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\tv.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall1.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall2.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall3.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall4.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\walls.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wave.xcf">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\shader\common.hlsli">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\fxc.exe">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\blur_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\blur_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\color_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\color_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\colorLightDir_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\colorLightDir_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\depthAmbientEmissive_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\depthAmbientEmissive_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\light_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\light_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\lightDir4_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\lightDir4_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\lightDir4Untex_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\lightDir4Untex_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\multiTexture_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\multiTexture_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\oneColor_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\oneColor_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\pointLight_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\pointLight_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\pointLightArray_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\refraction_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\refraction_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\shadowMap_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\shadowMap_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\spotLight_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\spotLight_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\text2d_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\text2d_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\texture_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\texture_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\vertexPosTexture_ps.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\shader\vertexPosTexture_vs.hlsl">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="..\..\resource\model\tv.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\bath.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\computer.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\key.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\panel.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\player.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\server.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\table.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\texturedCube.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\thing.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\thing2.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\model\thing3.obj">
+      <Filter>resource\model</Filter>
+    </None>
+    <None Include="..\..\resource\texture\computer.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\door.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\editorAmbientLight.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\editorCamera.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\editorMonster.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\editorPartition.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\editorPlayerSpawn.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\editorTalk.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\editorTriggerCamera.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\editorTriggerCommand.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor1.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor1_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor1_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor2_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor3.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor3_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\floor3_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\generic1.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\generic2.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass1_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass2.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass2_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass3_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass4_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass5_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass6_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass7_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\glass8_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\ground1_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\ground2_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\key.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\metal1.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\metal1_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\metal1_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\panel.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\player.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\server.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\table.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\texturedCube.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\thing2.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\thing3.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\tv.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall1.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall1_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall1_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall2.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall2_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall2_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall3.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall3_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall3_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall4.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall4_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall4_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall5.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall5_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall5_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall6.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall6_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall6_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall7.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall7_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wall7_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wave.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wave_nrml.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\texture\wave_spec.tga">
+      <Filter>resource\texture</Filter>
+    </None>
+    <None Include="..\..\resource\font\consolas.tga">
+      <Filter>resource\font</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{42E2864B-2773-4FFD-88F2-3C2AA72DFB50}</ProjectGuid>
+    <RootNamespace>demo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)inter\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)inter\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)inter\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)inter\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\editor\BlockToolPosition.cpp" />
+    <ClCompile Include="..\..\source\editor\BlockToolSize.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorCommand.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntityFinder.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_AmbientLight.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_Block.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_Camera.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_CameraTrack.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_CameraTrackPoint.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_Door.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_Model.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_Monster.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_Partition.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_PlayerSpawn.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_PointLight.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_Refraction.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_SpotLight.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_Talk.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_TriggerCamera.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEntity_TriggerCommand.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorEvent.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorGlobal.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorGui.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorState.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorState_BlockToolUse.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorState_EntityCreate.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorState_Idle.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorState_PickAxis.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorState_PickEntity.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorTool.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorToolManager.cpp" />
+    <ClCompile Include="..\..\source\editor\EditorWorld.cpp" />
+    <ClCompile Include="..\..\source\editor\Grid.cpp" />
+    <ClCompile Include="..\..\source\editor\GridLockAction.cpp" />
+    <ClCompile Include="..\..\source\editor\GuiAnimation.cpp" />
+    <ClCompile Include="..\..\source\editor\GuiComponent.cpp" />
+    <ClCompile Include="..\..\source\editor\GuiComponentFunction.cpp" />
+    <ClCompile Include="..\..\source\editor\GuiConfig.cpp" />
+    <ClCompile Include="..\..\source\editor\GuiPage.cpp" />
+    <ClCompile Include="..\..\source\editor\GuiPageControl.cpp" />
+    <ClCompile Include="..\..\source\editor\RenderInfoEditor.cpp" />
+    <ClCompile Include="..\..\source\engine\Angle.cpp" />
+    <ClCompile Include="..\..\source\engine\Application.cpp" />
+    <ClCompile Include="..\..\source\engine\ApplicationCoreInterface.cpp" />
+    <ClCompile Include="..\..\source\engine\AppMessageBox.cpp" />
+    <ClCompile Include="..\..\source\engine\BlendState.cpp" />
+    <ClCompile Include="..\..\source\engine\Chronometer.cpp" />
+    <ClCompile Include="..\..\source\engine\Class.cpp" />
+    <ClCompile Include="..\..\source\engine\CollisionInfo.cpp" />
+    <ClCompile Include="..\..\source\engine\CollisionManager.cpp" />
+    <ClCompile Include="..\..\source\engine\Component.cpp" />
+    <ClCompile Include="..\..\source\engine\Component_Collision.cpp" />
+    <ClCompile Include="..\..\source\engine\Component_Physics.cpp" />
+    <ClCompile Include="..\..\source\engine\Component_Render.cpp" />
+    <ClCompile Include="..\..\source\engine\Component_Trigger.cpp" />
+    <ClCompile Include="..\..\source\engine\ConstantBuffer.cpp" />
+    <ClCompile Include="..\..\source\engine\Core.cpp" />
+    <ClCompile Include="..\..\source\engine\Debug.cpp" />
+    <ClCompile Include="..\..\source\engine\DebugRender.cpp" />
+    <ClCompile Include="..\..\source\engine\DepthStencil.cpp" />
+    <ClCompile Include="..\..\source\engine\DepthStencilState.cpp" />
+    <ClCompile Include="..\..\source\engine\dx11_BlendState.cpp" />
+    <ClCompile Include="..\..\source\engine\dx11_DepthStencil.cpp" />
+    <ClCompile Include="..\..\source\engine\dx11_depthStencilState.cpp" />
+    <ClCompile Include="..\..\source\engine\dx11_Model.cpp" />
+    <ClCompile Include="..\..\source\engine\dx11_ShaderUtil.cpp" />
+    <ClCompile Include="..\..\source\engine\dx11_Texture.cpp" />
+    <ClCompile Include="..\..\source\engine\Effect.cpp" />
+    <ClCompile Include="..\..\source\engine\EngineGlobal.cpp" />
+    <ClCompile Include="..\..\source\engine\Entity.cpp" />
+    <ClCompile Include="..\..\source\engine\EntityFinder.cpp" />
+    <ClCompile Include="..\..\source\engine\EntityManager.cpp" />
+    <ClCompile Include="..\..\source\engine\EventDispatcher.cpp" />
+    <ClCompile Include="..\..\source\engine\EventEngine.cpp" />
+    <ClCompile Include="..\..\source\engine\EventListener.cpp" />
+    <ClCompile Include="..\..\source\engine\Exception.cpp" />
+    <ClCompile Include="..\..\source\engine\File.cpp" />
+    <ClCompile Include="..\..\source\engine\FileUtil.cpp" />
+    <ClCompile Include="..\..\source\engine\Font.cpp" />
+    <ClCompile Include="..\..\source\engine\FontEffect.cpp" />
+    <ClCompile Include="..\..\source\engine\FontManager.cpp" />
+    <ClCompile Include="..\..\source\engine\Gradient.cpp" />
+    <ClCompile Include="..\..\source\engine\Input.cpp" />
+    <ClCompile Include="..\..\source\engine\KeyMap.cpp" />
+    <ClCompile Include="..\..\source\engine\Light.cpp" />
+    <ClCompile Include="..\..\source\engine\LightManager.cpp" />
+    <ClCompile Include="..\..\source\engine\Math.cpp" />
+    <ClCompile Include="..\..\source\engine\Matrix.cpp" />
+    <ClCompile Include="..\..\source\engine\Model.cpp" />
+    <ClCompile Include="..\..\source\engine\ModelManager.cpp" />
+    <ClCompile Include="..\..\source\engine\ModelRepository.cpp" />
+    <ClCompile Include="..\..\source\engine\ObjLoader.cpp" />
+    <ClCompile Include="..\..\source\engine\Partition.cpp" />
+    <ClCompile Include="..\..\source\engine\Path.cpp" />
+    <ClCompile Include="..\..\source\engine\Physics.cpp" />
+    <ClCompile Include="..\..\source\engine\Primitive.cpp" />
+    <ClCompile Include="..\..\source\engine\Process.cpp" />
+    <ClCompile Include="..\..\source\engine\ProcessEngine.cpp" />
+    <ClCompile Include="..\..\source\engine\ProcessManager.cpp" />
+    <ClCompile Include="..\..\source\engine\Random.cpp" />
+    <ClCompile Include="..\..\source\engine\Rasterizer.cpp" />
+    <ClCompile Include="..\..\source\engine\Renderer.cpp" />
+    <ClCompile Include="..\..\source\engine\RenderInfo.cpp" />
+    <ClCompile Include="..\..\source\engine\RenderTarget.cpp" />
+    <ClCompile Include="..\..\source\engine\ResourceManager.cpp" />
+    <ClCompile Include="..\..\source\engine\SamplerState.cpp" />
+    <ClCompile Include="..\..\source\engine\Scene.cpp" />
+    <ClCompile Include="..\..\source\engine\ScriptLine.cpp" />
+    <ClCompile Include="..\..\source\engine\ScriptReader.cpp" />
+    <ClCompile Include="..\..\source\engine\Shader.cpp" />
+    <ClCompile Include="..\..\source\engine\String.cpp" />
+    <ClCompile Include="..\..\source\engine\StringClass.cpp" />
+    <ClCompile Include="..\..\source\engine\TableHashFunction.cpp" />
+    <ClCompile Include="..\..\source\engine\Texture.cpp" />
+    <ClCompile Include="..\..\source\engine\TextureManager.cpp" />
+    <ClCompile Include="..\..\source\engine\TgaLoader.cpp" />
+    <ClCompile Include="..\..\source\engine\Timer.cpp" />
+    <ClCompile Include="..\..\source\engine\Vector.cpp" />
+    <ClCompile Include="..\..\source\engine\Vertex.cpp" />
+    <ClCompile Include="..\..\source\engine\win32_File.cpp" />
+    <ClCompile Include="..\..\source\engine\win32_Platform.cpp" />
+    <ClCompile Include="..\..\source\game\AiState.cpp" />
+    <ClCompile Include="..\..\source\game\AiStateMachine.cpp" />
+    <ClCompile Include="..\..\source\game\AiView.cpp" />
+    <ClCompile Include="..\..\source\game\CameraManager.cpp" />
+    <ClCompile Include="..\..\source\game\CharacterControl.cpp" />
+    <ClCompile Include="..\..\source\game\Console.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_AmbientLight.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Block.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_CameraTrack.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Door.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_GameCamera.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Model.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Monster.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_MonsterProjectile.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Player.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_PointLight.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Refraction.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Rocket.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_SpotLight.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Talk.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_Test.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_TriggerCamera.cpp" />
+    <ClCompile Include="..\..\source\game\Entity_TriggerCommand.cpp" />
+    <ClCompile Include="..\..\source\game\GameCollision.cpp" />
+    <ClCompile Include="..\..\source\game\GameCommand.cpp" />
+    <ClCompile Include="..\..\source\game\GameEntityFinder.cpp" />
+    <ClCompile Include="..\..\source\game\GameGlobal.cpp" />
+    <ClCompile Include="..\..\source\game\GameGui.cpp" />
+    <ClCompile Include="..\..\source\game\GameWorld.cpp" />
+    <ClCompile Include="..\..\source\game\RenderInfo_Entity.cpp" />
+    <ClCompile Include="..\..\source\main.cpp" />
+    <ClCompile Include="..\..\source\shared\Command.cpp" />
+    <ClCompile Include="..\..\source\shared\Component_LightFlicker.cpp" />
+    <ClCompile Include="..\..\source\shared\EntityUtil.cpp" />
+    <ClCompile Include="..\..\source\shared\FirstPersonCamera.cpp" />
+    <ClCompile Include="..\..\source\shared\Loader.cpp" />
+    <ClCompile Include="..\..\source\shared\ProcessShared.cpp" />
+    <ClCompile Include="..\..\source\shared\VecGrid.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\editor\BlockToolPosition.h" />
+    <ClInclude Include="..\..\source\editor\BlockToolSize.h" />
+    <ClInclude Include="..\..\source\editor\EditorCommand.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntityFinder.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntityUtil.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_AmbientLight.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_Block.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_Camera.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_CameraTrack.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_CameraTrackPoint.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_Door.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_Model.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_Monster.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_Partition.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_PlayerSpawn.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_PointLight.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_Refraction.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_SpotLight.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_Talk.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_TriggerCamera.h" />
+    <ClInclude Include="..\..\source\editor\EditorEntity_TriggerCommand.h" />
+    <ClInclude Include="..\..\source\editor\EditorEvent.h" />
+    <ClInclude Include="..\..\source\editor\EditorGlobal.h" />
+    <ClInclude Include="..\..\source\editor\EditorGui.h" />
+    <ClInclude Include="..\..\source\editor\EditorState.h" />
+    <ClInclude Include="..\..\source\editor\EditorState_BlockToolUse.h" />
+    <ClInclude Include="..\..\source\editor\EditorState_EntityCreate.h" />
+    <ClInclude Include="..\..\source\editor\EditorState_Idle.h" />
+    <ClInclude Include="..\..\source\editor\EditorState_PickAxis.h" />
+    <ClInclude Include="..\..\source\editor\EditorState_PickEntity.h" />
+    <ClInclude Include="..\..\source\editor\EditorTool.h" />
+    <ClInclude Include="..\..\source\editor\EditorToolManager.h" />
+    <ClInclude Include="..\..\source\editor\EditorWorld.h" />
+    <ClInclude Include="..\..\source\editor\Grid.h" />
+    <ClInclude Include="..\..\source\editor\GridLockAction.h" />
+    <ClInclude Include="..\..\source\editor\GridUtil.h" />
+    <ClInclude Include="..\..\source\editor\GuiAnimation.h" />
+    <ClInclude Include="..\..\source\editor\GuiComponent.h" />
+    <ClInclude Include="..\..\source\editor\GuiComponentFunction.h" />
+    <ClInclude Include="..\..\source\editor\GuiConfig.h" />
+    <ClInclude Include="..\..\source\editor\GuiPage.h" />
+    <ClInclude Include="..\..\source\editor\GuiPageControl.h" />
+    <ClInclude Include="..\..\source\editor\GuiUtil.h" />
+    <ClInclude Include="..\..\source\editor\RenderInfoEditor.h" />
+    <ClInclude Include="..\..\source\engine\Angle.h" />
+    <ClInclude Include="..\..\source\engine\api_BlendState.h" />
+    <ClInclude Include="..\..\source\engine\api_DepthStencil.h" />
+    <ClInclude Include="..\..\source\engine\api_DepthStencilState.h" />
+    <ClInclude Include="..\..\source\engine\api_File.h" />
+    <ClInclude Include="..\..\source\engine\api_Model.h" />
+    <ClInclude Include="..\..\source\engine\api_ShaderUtil.h" />
+    <ClInclude Include="..\..\source\engine\api_Texture.h" />
+    <ClInclude Include="..\..\source\engine\Application.h" />
+    <ClInclude Include="..\..\source\engine\ApplicationCoreInterface.h" />
+    <ClInclude Include="..\..\source\engine\AppMessageBox.h" />
+    <ClInclude Include="..\..\source\engine\Array.h" />
+    <ClInclude Include="..\..\source\engine\BlendState.h" />
+    <ClInclude Include="..\..\source\engine\Chronometer.h" />
+    <ClInclude Include="..\..\source\engine\Class.h" />
+    <ClInclude Include="..\..\source\engine\CollisionInfo.h" />
+    <ClInclude Include="..\..\source\engine\CollisionManager.h" />
+    <ClInclude Include="..\..\source\engine\Component.h" />
+    <ClInclude Include="..\..\source\engine\Component_Collision.h" />
+    <ClInclude Include="..\..\source\engine\Component_Physics.h" />
+    <ClInclude Include="..\..\source\engine\Component_Render.h" />
+    <ClInclude Include="..\..\source\engine\Component_Trigger.h" />
+    <ClInclude Include="..\..\source\engine\ConstantBuffer.h" />
+    <ClInclude Include="..\..\source\engine\Core.h" />
+    <ClInclude Include="..\..\source\engine\CoreInterface.h" />
+    <ClInclude Include="..\..\source\engine\CoreModule.h" />
+    <ClInclude Include="..\..\source\engine\Debug.h" />
+    <ClInclude Include="..\..\source\engine\DebugRender.h" />
+    <ClInclude Include="..\..\source\engine\DepthStencil.h" />
+    <ClInclude Include="..\..\source\engine\DepthStencilState.h" />
+    <ClInclude Include="..\..\source\engine\Effect.h" />
+    <ClInclude Include="..\..\source\engine\EngineGlobal.h" />
+    <ClInclude Include="..\..\source\engine\Entity.h" />
+    <ClInclude Include="..\..\source\engine\EntityFinder.h" />
+    <ClInclude Include="..\..\source\engine\EntityManager.h" />
+    <ClInclude Include="..\..\source\engine\Event.h" />
+    <ClInclude Include="..\..\source\engine\EventDispatcher.h" />
+    <ClInclude Include="..\..\source\engine\EventEngine.h" />
+    <ClInclude Include="..\..\source\engine\EventListener.h" />
+    <ClInclude Include="..\..\source\engine\Exception.h" />
+    <ClInclude Include="..\..\source\engine\File.h" />
+    <ClInclude Include="..\..\source\engine\FileUtil.h" />
+    <ClInclude Include="..\..\source\engine\Font.h" />
+    <ClInclude Include="..\..\source\engine\FontEffect.h" />
+    <ClInclude Include="..\..\source\engine\FontManager.h" />
+    <ClInclude Include="..\..\source\engine\Gradient.h" />
+    <ClInclude Include="..\..\source\engine\Handle.h" />
+    <ClInclude Include="..\..\source\engine\HandleRepository.h" />
+    <ClInclude Include="..\..\source\engine\Input.h" />
+    <ClInclude Include="..\..\source\engine\KeyMap.h" />
+    <ClInclude Include="..\..\source\engine\Light.h" />
+    <ClInclude Include="..\..\source\engine\LightManager.h" />
+    <ClInclude Include="..\..\source\engine\List.h" />
+    <ClInclude Include="..\..\source\engine\ListBridge.h" />
+    <ClInclude Include="..\..\source\engine\ListIterator.h" />
+    <ClInclude Include="..\..\source\engine\Math.h" />
+    <ClInclude Include="..\..\source\engine\Matrix.h" />
+    <ClInclude Include="..\..\source\engine\Model.h" />
+    <ClInclude Include="..\..\source\engine\ModelManager.h" />
+    <ClInclude Include="..\..\source\engine\ModelRepository.h" />
+    <ClInclude Include="..\..\source\engine\NodeList.h" />
+    <ClInclude Include="..\..\source\engine\ObjLoader.h" />
+    <ClInclude Include="..\..\source\engine\Partition.h" />
+    <ClInclude Include="..\..\source\engine\Path.h" />
+    <ClInclude Include="..\..\source\engine\Physics.h" />
+    <ClInclude Include="..\..\source\engine\PhysicsInfo.h" />
+    <ClInclude Include="..\..\source\engine\Platform.h" />
+    <ClInclude Include="..\..\source\engine\Pointer.h" />
+    <ClInclude Include="..\..\source\engine\Primitive.h" />
+    <ClInclude Include="..\..\source\engine\Process.h" />
+    <ClInclude Include="..\..\source\engine\ProcessEngine.h" />
+    <ClInclude Include="..\..\source\engine\ProcessManager.h" />
+    <ClInclude Include="..\..\source\engine\Random.h" />
+    <ClInclude Include="..\..\source\engine\Rasterizer.h" />
+    <ClInclude Include="..\..\source\engine\Renderer.h" />
+    <ClInclude Include="..\..\source\engine\RenderInfo.h" />
+    <ClInclude Include="..\..\source\engine\RenderTarget.h" />
+    <ClInclude Include="..\..\source\engine\RenderUtil.h" />
+    <ClInclude Include="..\..\source\engine\ResourceManager.h" />
+    <ClInclude Include="..\..\source\engine\ResourceModule.h" />
+    <ClInclude Include="..\..\source\engine\SamplerState.h" />
+    <ClInclude Include="..\..\source\engine\Scene.h" />
+    <ClInclude Include="..\..\source\engine\ScriptLine.h" />
+    <ClInclude Include="..\..\source\engine\ScriptReader.h" />
+    <ClInclude Include="..\..\source\engine\Shader.h" />
+    <ClInclude Include="..\..\source\engine\String.h" />
+    <ClInclude Include="..\..\source\engine\StringClass.h" />
+    <ClInclude Include="..\..\source\engine\Table.h" />
+    <ClInclude Include="..\..\source\engine\TableHashFunction.h" />
+    <ClInclude Include="..\..\source\engine\TableIterator.h" />
+    <ClInclude Include="..\..\source\engine\Texture.h" />
+    <ClInclude Include="..\..\source\engine\TextureManager.h" />
+    <ClInclude Include="..\..\source\engine\TgaLoader.h" />
+    <ClInclude Include="..\..\source\engine\Timer.h" />
+    <ClInclude Include="..\..\source\engine\Type.h" />
+    <ClInclude Include="..\..\source\engine\Vector.h" />
+    <ClInclude Include="..\..\source\engine\Vertex.h" />
+    <ClInclude Include="..\..\source\engine\WorldInterface.h" />
+    <ClInclude Include="..\..\source\game\AiState.h" />
+    <ClInclude Include="..\..\source\game\AiStateMachine.h" />
+    <ClInclude Include="..\..\source\game\AiView.h" />
+    <ClInclude Include="..\..\source\game\CameraManager.h" />
+    <ClInclude Include="..\..\source\game\CharacterControl.h" />
+    <ClInclude Include="..\..\source\game\Console.h" />
+    <ClInclude Include="..\..\source\game\Entity_AmbientLight.h" />
+    <ClInclude Include="..\..\source\game\Entity_Block.h" />
+    <ClInclude Include="..\..\source\game\Entity_CameraTrack.h" />
+    <ClInclude Include="..\..\source\game\Entity_Door.h" />
+    <ClInclude Include="..\..\source\game\Entity_GameCamera.h" />
+    <ClInclude Include="..\..\source\game\Entity_Model.h" />
+    <ClInclude Include="..\..\source\game\Entity_Monster.h" />
+    <ClInclude Include="..\..\source\game\Entity_MonsterProjectile.h" />
+    <ClInclude Include="..\..\source\game\Entity_Player.h" />
+    <ClInclude Include="..\..\source\game\Entity_PointLight.h" />
+    <ClInclude Include="..\..\source\game\Entity_Refraction.h" />
+    <ClInclude Include="..\..\source\game\Entity_Rocket.h" />
+    <ClInclude Include="..\..\source\game\Entity_SpotLight.h" />
+    <ClInclude Include="..\..\source\game\Entity_Talk.h" />
+    <ClInclude Include="..\..\source\game\Entity_Test.h" />
+    <ClInclude Include="..\..\source\game\Entity_TriggerCamera.h" />
+    <ClInclude Include="..\..\source\game\Entity_TriggerCommand.h" />
+    <ClInclude Include="..\..\source\game\GameCollision.h" />
+    <ClInclude Include="..\..\source\game\GameCommand.h" />
+    <ClInclude Include="..\..\source\game\GameEntityFinder.h" />
+    <ClInclude Include="..\..\source\game\GameEnum.h" />
+    <ClInclude Include="..\..\source\game\GameEvent.h" />
+    <ClInclude Include="..\..\source\game\GameGlobal.h" />
+    <ClInclude Include="..\..\source\game\GameGui.h" />
+    <ClInclude Include="..\..\source\game\GameTrigger.h" />
+    <ClInclude Include="..\..\source\game\GameWorld.h" />
+    <ClInclude Include="..\..\source\game\RenderInfo_Entity.h" />
+    <ClInclude Include="..\..\source\shared\Command.h" />
+    <ClInclude Include="..\..\source\shared\Component_LightFlicker.h" />
+    <ClInclude Include="..\..\source\shared\EntityUtil.h" />
+    <ClInclude Include="..\..\source\shared\FirstPersonCamera.h" />
+    <ClInclude Include="..\..\source\shared\Loader.h" />
+    <ClInclude Include="..\..\source\shared\ProcessShared.h" />
+    <ClInclude Include="..\..\source\shared\VecGrid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resource\font\consolas.fnt" />
+    <None Include="..\..\resource\font\consolas.xcf" />
+    <None Include="..\..\resource\map\test.map" />
+    <None Include="..\..\resource\model\bath.blend" />
+    <None Include="..\..\resource\model\computer.blend" />
+    <None Include="..\..\resource\model\key.blend" />
+    <None Include="..\..\resource\model\panel.blend" />
+    <None Include="..\..\resource\model\player.blend" />
+    <None Include="..\..\resource\model\server.blend" />
+    <None Include="..\..\resource\model\table.blend" />
+    <None Include="..\..\resource\model\texturedCube.blend" />
+    <None Include="..\..\resource\model\thing.blend" />
+    <None Include="..\..\resource\model\thing2.blend" />
+    <None Include="..\..\resource\model\thing3.blend" />
+    <None Include="..\..\resource\model\tv.blend" />
+    <None Include="..\..\resource\shader\common.hlsli" />
+    <None Include="..\..\resource\shader\fxc.exe" />
+    <None Include="..\..\resource\texture\computer.xcf" />
+    <None Include="..\..\resource\texture\door.xcf" />
+    <None Include="..\..\resource\texture\Floor1.blend" />
+    <None Include="..\..\resource\texture\floor1.xcf" />
+    <None Include="..\..\resource\texture\floor3.xcf" />
+    <None Include="..\..\resource\texture\floors.xcf" />
+    <None Include="..\..\resource\texture\glass1.xcf" />
+    <None Include="..\..\resource\texture\glassVarious.xcf" />
+    <None Include="..\..\resource\texture\key.xcf" />
+    <None Include="..\..\resource\texture\metal.xcf" />
+    <None Include="..\..\resource\texture\panel.xcf" />
+    <None Include="..\..\resource\texture\player.xcf" />
+    <None Include="..\..\resource\texture\server.xcf" />
+    <None Include="..\..\resource\texture\table.xcf" />
+    <None Include="..\..\resource\texture\thing2.xcf" />
+    <None Include="..\..\resource\texture\thing3.xcf" />
+    <None Include="..\..\resource\texture\tv.xcf" />
+    <None Include="..\..\resource\texture\wall1.xcf" />
+    <None Include="..\..\resource\texture\wall2.xcf" />
+    <None Include="..\..\resource\texture\wall3.xcf" />
+    <None Include="..\..\resource\texture\wall4.xcf" />
+    <None Include="..\..\resource\texture\walls.xcf" />
+    <None Include="..\..\resource\texture\wave.xcf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resource\model\bath.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\computer.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\key.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\panel.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\player.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\server.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\table.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\texturedCube.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\thing.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\thing2.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\thing3.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\model\tv.obj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resource\font\consolas.tga" />
+    <None Include="..\..\resource\texture\computer.tga" />
+    <None Include="..\..\resource\texture\door.tga" />
+    <None Include="..\..\resource\texture\editorAmbientLight.tga" />
+    <None Include="..\..\resource\texture\editorCamera.tga" />
+    <None Include="..\..\resource\texture\editorMonster.tga" />
+    <None Include="..\..\resource\texture\editorPartition.tga" />
+    <None Include="..\..\resource\texture\editorPlayerSpawn.tga" />
+    <None Include="..\..\resource\texture\editorTalk.tga" />
+    <None Include="..\..\resource\texture\editorTriggerCamera.tga" />
+    <None Include="..\..\resource\texture\editorTriggerCommand.tga" />
+    <None Include="..\..\resource\texture\floor1.tga" />
+    <None Include="..\..\resource\texture\floor1_nrml.tga" />
+    <None Include="..\..\resource\texture\floor1_spec.tga" />
+    <None Include="..\..\resource\texture\floor2_nrml.tga" />
+    <None Include="..\..\resource\texture\floor3.tga" />
+    <None Include="..\..\resource\texture\floor3_nrml.tga" />
+    <None Include="..\..\resource\texture\floor3_spec.tga" />
+    <None Include="..\..\resource\texture\generic1.tga" />
+    <None Include="..\..\resource\texture\generic2.tga" />
+    <None Include="..\..\resource\texture\glass1_nrml.tga" />
+    <None Include="..\..\resource\texture\glass2.tga" />
+    <None Include="..\..\resource\texture\glass2_nrml.tga" />
+    <None Include="..\..\resource\texture\glass3_nrml.tga" />
+    <None Include="..\..\resource\texture\glass4_nrml.tga" />
+    <None Include="..\..\resource\texture\glass5_nrml.tga" />
+    <None Include="..\..\resource\texture\glass6_nrml.tga" />
+    <None Include="..\..\resource\texture\glass7_nrml.tga" />
+    <None Include="..\..\resource\texture\glass8_nrml.tga" />
+    <None Include="..\..\resource\texture\ground1_nrml.tga" />
+    <None Include="..\..\resource\texture\ground2_nrml.tga" />
+    <None Include="..\..\resource\texture\key.tga" />
+    <None Include="..\..\resource\texture\metal1.tga" />
+    <None Include="..\..\resource\texture\metal1_nrml.tga" />
+    <None Include="..\..\resource\texture\metal1_spec.tga" />
+    <None Include="..\..\resource\texture\panel.tga" />
+    <None Include="..\..\resource\texture\player.tga" />
+    <None Include="..\..\resource\texture\server.tga" />
+    <None Include="..\..\resource\texture\table.tga" />
+    <None Include="..\..\resource\texture\texturedCube.tga" />
+    <None Include="..\..\resource\texture\thing2.tga" />
+    <None Include="..\..\resource\texture\thing3.tga" />
+    <None Include="..\..\resource\texture\tv.tga" />
+    <None Include="..\..\resource\texture\wall1.tga" />
+    <None Include="..\..\resource\texture\wall1_nrml.tga" />
+    <None Include="..\..\resource\texture\wall1_spec.tga" />
+    <None Include="..\..\resource\texture\wall2.tga" />
+    <None Include="..\..\resource\texture\wall2_nrml.tga" />
+    <None Include="..\..\resource\texture\wall2_spec.tga" />
+    <None Include="..\..\resource\texture\wall3.tga" />
+    <None Include="..\..\resource\texture\wall3_nrml.tga" />
+    <None Include="..\..\resource\texture\wall3_spec.tga" />
+    <None Include="..\..\resource\texture\wall4.tga" />
+    <None Include="..\..\resource\texture\wall4_nrml.tga" />
+    <None Include="..\..\resource\texture\wall4_spec.tga" />
+    <None Include="..\..\resource\texture\wall5.tga" />
+    <None Include="..\..\resource\texture\wall5_nrml.tga" />
+    <None Include="..\..\resource\texture\wall5_spec.tga" />
+    <None Include="..\..\resource\texture\wall6.tga" />
+    <None Include="..\..\resource\texture\wall6_nrml.tga" />
+    <None Include="..\..\resource\texture\wall6_spec.tga" />
+    <None Include="..\..\resource\texture\wall7.tga" />
+    <None Include="..\..\resource\texture\wall7_nrml.tga" />
+    <None Include="..\..\resource\texture\wall7_spec.tga" />
+    <None Include="..\..\resource\texture\wave.tga" />
+    <None Include="..\..\resource\texture\wave_nrml.tga" />
+    <None Include="..\..\resource\texture\wave_spec.tga" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resource\shader\blur_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\blur_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\colorLightDir_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\colorLightDir_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\color_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\color_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\depthAmbientEmissive_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\depthAmbientEmissive_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\lightDir4Untex_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\lightDir4Untex_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\lightDir4_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\lightDir4_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\light_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\light_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\multiTexture_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\multiTexture_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\oneColor_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\oneColor_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\pointLightArray_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\pointLight_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\pointLight_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\refraction_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\refraction_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\shadowMap_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\shadowMap_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\spotLight_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\spotLight_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\text2d_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\text2d_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\texture_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\texture_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\vertexPosTexture_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\resource\shader\vertexPosTexture_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
